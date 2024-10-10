@@ -64,7 +64,7 @@ body {
   margin: 0;
   font-family: var(--body-font-family);
   line-height: 1.6;
-  color: var(--text-color);
+  color: #f15b3a;
   background-color: var(--background-color);
   display: none;
 }
@@ -222,5 +222,5 @@ main .section {
 /* section metadata */
 main .section.light,
 main .section.highlight {
-  background-color: var(--light-color);
+  background-color: red;
 }
