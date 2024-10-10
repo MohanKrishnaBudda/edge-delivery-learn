@@ -222,5 +222,5 @@ main .section {
 /* section metadata */
 main .section.light,
 main .section.highlight {
-  background-color: red;
+  background-color: var(--light-color);
 }
