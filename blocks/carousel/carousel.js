@@ -4,7 +4,7 @@ const placeholders = await fetchPlaceholders(getMetadata("locale"));
 const { btnNxt,btnPre} = placeholders;
 export default function decorate(block) {
 
-  console.log("placeholders ---> ",placeholders,btnNxt,btnPre);
+  console.log("placeholders here ---> ",placeholders,btnNxt,btnPre);
     const rows= [...block.children];
     [...block.children].forEach((row,r) => {
       if(r==0){
