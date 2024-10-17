@@ -21,7 +21,7 @@
 	  "containerId":"tools",
       "id": "google-assist",
       "title": "Google Assist",
-      "environments": [ "edit","dev", "preview", "live", "prod"],
+      "environments": ["dev", "live", "prod"],
       "url": "https://www.google.com/search?q=edge+delivery+services",
       "isPalette": true,
       "passConfig":true,
