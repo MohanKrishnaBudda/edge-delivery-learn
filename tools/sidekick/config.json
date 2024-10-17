@@ -23,7 +23,6 @@
       "title": "Google Assist",
       "environments": ["dev", "live", "prod"],
       "url": "https://www.google.com/search?q=edge+delivery+services",
-      "isPalette": true,
       "passConfig":true,
       "passReferrer": true,
       "excludePaths":[
