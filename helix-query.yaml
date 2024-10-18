@@ -1,0 +1,29 @@
+version: 1
+indices:
+  site:
+    include: 
+      - '**'
+    exclude: 
+      - '**/articles/**'
+    target: /query-index
+    properties:
+      author:
+        select: head > meta[name="author"]
+        value: |
+          attribute(el, 'content')
+      title:
+        select: head > meta[name="og:title"]
+        value: |
+          attribute(el, 'content')
+      date:
+        select: head > meta[name="publication-date"]
+        value: |
+          dateValue(attribute(el,'content'), 'MM-DD-YYYY')
+      description:
+        select: head > meta[name="og:description"]
+        value: |
+          attribute(el, 'content')
+      last-modified:
+        select: none
+        value: |
+          parseTimestamp(headers['last-modified'], 'ddd, DD MMM YYYY hh:mm:ss GMT')
